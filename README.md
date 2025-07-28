@@ -20,6 +20,9 @@ Açık & Koyu Tema: Kullanıcının tercihine göre değişen tema desteği.
 
 Anlık Bildirimler: Başarılı veya hatalı işlemlerde kullanıcıyı bilgilendiren toast bildirimleri.
 
+📸 Ekran Görüntüleri
+(Buraya projenizin ekran görüntülerini veya GIF'lerini ekleyebilirsiniz. Örn: Giriş sayfası, ana panel, haftalık görünüm, görev detayı paneli vb.)
+
 Ana Panel (Açık Tema)
 
 Haftalık Planlayıcı (Koyu Tema)
