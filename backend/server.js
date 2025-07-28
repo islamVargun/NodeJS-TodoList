@@ -28,7 +28,9 @@ app.get("/", (req, res) => {
 
 app.use("/api/todos", todoRoutes);
 app.use("/api/auth", authRoutes);
-// GÜNCELLEME: app.listen() kaldırıldı ve app dışa aktarıldı.
-// Vercel, sunucuyu bu export üzerinden çalıştıracak.
 
-module.exports = app;
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
