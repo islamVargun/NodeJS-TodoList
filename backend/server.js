@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/todos", todoRoutes);
 app.use("/api/auth", authRoutes);
-
 // GÜNCELLEME: app.listen() kaldırıldı ve app dışa aktarıldı.
 // Vercel, sunucuyu bu export üzerinden çalıştıracak.
+
 module.exports = app;
