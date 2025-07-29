@@ -1,0 +1,10 @@
+{
+  "name": "full-stack-todo-app",
+  "version": "1.0.0",
+  "scripts": {
+    "vercel-build": "cd frontend && npm install && npm run build && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

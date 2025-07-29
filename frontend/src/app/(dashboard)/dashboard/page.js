@@ -7,7 +7,7 @@ import TodoForm from "@/components/todos/TodoForm";
 import TodoList from "@/components/todos/TodoList";
 import { ThemeToggleButton } from "@/components/theme-toggle-button";
 import { useAuth } from "@/context/AuthContext";
-import { TaskDetailSheet } from "@/components/todos/TaskDetailSheet"; 
+import { TaskDetailSheet } from "@/components/todos/TaskDetailSheet";
 import {
   DndContext,
   closestCenter,
@@ -33,7 +33,7 @@ export default function HomePage() {
   const [selectedTask, setSelectedTask] = useState(null);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
-  const API_URL = "http://localhost:3000/api/todos";
+  const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/todos`;
 
   const fetchTodos = useCallback(async () => {
     if (!token) return;

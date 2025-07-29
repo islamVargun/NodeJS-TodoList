@@ -13,7 +13,7 @@ export default function CompletedPage() {
   const [error, setError] = useState(null);
   const { token } = useAuth();
 
-  const API_URL = "http://localhost:3000/api/todos";
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/todos`;
 
   const fetchCompletedTodos = useCallback(async () => {
     if (!token) return;

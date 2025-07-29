@@ -45,7 +45,7 @@ export default function WeeklyPlannerPage() {
   const [selectedTask, setSelectedTask] = useState(null);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
-  const API_URL = "http://localhost:3000/api/todos";
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/todos`;
 
   const fetchWeeklyTodos = useCallback(
     async (date) => {
