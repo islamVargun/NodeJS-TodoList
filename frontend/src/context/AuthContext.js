@@ -33,11 +33,14 @@ export const AuthProvider = ({ children }) => {
         return;
       }
       try {
-        const response = await fetch("http://localhost:3000/api/auth/user", {
-          headers: {
-            "x-auth-token": authToken,
-          },
-        });
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/auth/user`,
+          {
+            headers: {
+              "x-auth-token": authToken,
+            },
+          }
+        );
 
         if (!response.ok) {
           const errorText = await response.text();
